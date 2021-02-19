@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="646.0" style="-fx-background-color: #00141b;" stylesheets="@../css/activity.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <children>
+        <Pane layoutX="66.0" prefHeight="379.0" prefWidth="25.0" style="-fx-background-color: #003e50;" />
+        <Label layoutX="103.0" layoutY="12.0" text="%messageDay" textFill="#003e50">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font></Label>
+        <Pane layoutX="21.0" prefHeight="379.0" prefWidth="25.0" style="-fx-background-color: #2d8daa;" />
+        <Label fx:id="lblMessage" layoutX="103.0" layoutY="63.0" text="Label" textFill="#2d8daa">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="104.0" layoutY="105.0" text="%food" textFill="#003e50">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblBreakfast" layoutX="104.0" layoutY="156.0" text="Breakfast:" textFill="#2d8daa">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDinner" layoutX="103.0" layoutY="192.0" text="Dinner:" textFill="#2d8daa">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="237.0" text="%todayActivity" textFill="#003e50">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDateTime" layoutX="230.0" layoutY="332.0" text="12.12.2020 | 15:24:59" textFill="#2d8daa">
+            <font>
+                <Font name="System Italic" size="27.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblActivity" layoutX="102.0" layoutY="288.0" text="Label" textFill="#2d8daa">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

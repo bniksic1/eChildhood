@@ -1,0 +1,22 @@
+.jfx-text-field
+{
+    -jfx-focus-color: red;
+    /*-jfx-unfocus-color: #003e50; doesn't work*/
+}
+
+.jfx-password-field{
+    -jfx-focus-color: red;
+}
+
+.text-field
+{
+    -fx-prompt-text-fill: red;
+    -fx-text-fill: #2d8daa;
+}
+
+.text-field .input-line
+{
+    -fx-background-color: red; /*Yellow - bottom bar*/
+}
+
+

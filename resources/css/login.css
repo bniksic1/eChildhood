@@ -1,0 +1,34 @@
+.JButton{
+    -fx-background-color: #2d8daa;
+}
+
+.JButton:hover{
+    -fx-background-color: #57b0cd;
+}
+
+.button{
+    -fx-cursor: hand;
+}
+
+.jfx-text-field
+{
+    -jfx-focus-color: #2d8daa;
+    /*-jfx-unfocus-color: #003e50; doesn't work*/
+}
+
+.jfx-password-field{
+    -jfx-focus-color: #2d8daa;
+}
+
+.text-field
+{
+    -fx-prompt-text-fill: #003e50;
+    -fx-text-fill: #2d8daa;
+}
+
+.text-field .input-line
+{
+    -fx-background-color: #003e50; /*Yellow - bottom bar*/
+}
+
+

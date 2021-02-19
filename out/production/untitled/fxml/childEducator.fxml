@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="646.0" style="-fx-background-color: #00141b;" stylesheets="@../css/child.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Line endY="-5.0" layoutX="218.0" layoutY="27.0" startY="282.0" stroke="#003e50" />
+        <Circle fx:id="circle" fill="DODGERBLUE" layoutX="89.0" layoutY="88.0" radius="78.0" stroke="#a8dcf3" strokeType="INSIDE" />
+        <JFXButton layoutX="35.0" layoutY="173.0" onAction="#changeAvatarAction" text="%changeAvatar" textFill="#a8dcf3">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXTextField fx:id="fldUsername" alignment="CENTER" focusColor="#2d8daa" layoutX="20.0" layoutY="210.0" maxWidth="193.0" minWidth="107.0" prefHeight="31.0" prefWidth="139.0" unFocusColor="#003e50" />
+        <JFXPasswordField fx:id="fldPassword" alignment="CENTER" focusColor="#2d8daa" layoutX="22.0" layoutY="275.0" maxWidth="139.0" minWidth="139.0" prefHeight="31.0" prefWidth="139.0" unFocusColor="#003e50" />
+        <GridPane hgap="5.0" layoutX="250.0" layoutY="11.0" prefHeight="310.0" prefWidth="382.0" vgap="3.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="121.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.0" minWidth="10.0" prefWidth="244.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <JFXTextField fx:id="fldName" focusColor="#2d8daa" maxWidth="273.0" minWidth="146.0" prefHeight="31.0" prefWidth="273.0" unFocusColor="#003e50" GridPane.columnIndex="1" />
+                <JFXTextField fx:id="fldSurname" focusColor="#2d8daa" maxWidth="271.0" minWidth="146.0" prefHeight="31.0" prefWidth="271.0" unFocusColor="#003e50" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <JFXTextField fx:id="fldLocation" focusColor="#2d8daa" maxWidth="294.0" minWidth="146.0" prefHeight="31.0" prefWidth="294.0" unFocusColor="#003e50" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <JFXTextField fx:id="fldAddress" focusColor="#2d8daa" maxWidth="308.0" minWidth="146.0" prefHeight="31.0" prefWidth="308.0" unFocusColor="#003e50" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <JFXTextField fx:id="fldPName" focusColor="#2d8daa" maxWidth="314.0" minWidth="146.0" prefHeight="31.0" prefWidth="314.0" unFocusColor="#003e50" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <JFXTextField fx:id="fldPEmail" focusColor="#2d8daa" maxWidth="298.0" minWidth="146.0" prefHeight="31.0" prefWidth="298.0" unFocusColor="#003e50" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <JFXTextField fx:id="fldPNumber" focusColor="#2d8daa" maxWidth="282.0" minWidth="146.0" prefHeight="31.0" prefWidth="282.0" unFocusColor="#003e50" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <DatePicker fx:id="datePicker" editable="false" prefHeight="25.0" prefWidth="230.0" styleClass="date-picker" translateY="1.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <GridPane.margin>
+                        <Insets left="7.0" />
+                    </GridPane.margin>
+                </DatePicker>
+                <ChoiceBox fx:id="choiceEducator" prefHeight="25.0" prefWidth="230.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets left="7.0" />
+                    </GridPane.margin>
+                </ChoiceBox>
+                <Label alignment="CENTER_RIGHT" styleClass="label1" text="%surname" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" styleClass="label1" text="%name" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" styleClass="label1" text="%birthDate" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" styleClass="label1" text="%location" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" styleClass="label1" text="%address" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" styleClass="label1" text="%pName" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" styleClass="label1" text="%pNumber" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" styleClass="label1" text="%pEmail" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" styleClass="label1" text="%educator2" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets left="5.0" right="5.0" />
+            </padding>
+        </GridPane>
+        <HBox alignment="CENTER_RIGHT" layoutX="252.0" layoutY="331.0" prefHeight="31.0" prefWidth="365.0" spacing="10.0">
+            <children>
+                <JFXButton fx:id="btnDelete" onAction="#deleteAction" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #003e50;" text="%delete" textFill="#a8dcf3" />
+                <JFXButton onAction="#saveAction" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #003e50;" text="%save" textFill="#a8dcf3" />
+                <JFXButton onAction="#cancelAction" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #003e50;" text="%cancel" textFill="#a8dcf3" />
+            </children>
+        </HBox>
+        <Label fx:id="lblUsername" alignment="TOP_CENTER" layoutX="31.0" layoutY="244.0" prefHeight="26.0" prefWidth="118.0" text="%username" textFill="#2d8daa" />
+        <Label fx:id="lblTaken" layoutX="11.0" layoutY="337.0" prefHeight="20.0" prefWidth="253.0" text="Username must containat least 5 letters." textFill="RED">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblUsername1" alignment="TOP_CENTER" layoutX="32.0" layoutY="309.0" prefHeight="26.0" prefWidth="118.0" text="%password" textFill="#2d8daa" />
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>

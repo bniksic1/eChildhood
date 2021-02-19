@@ -1,0 +1,45 @@
+.label1{
+    -fx-text-fill: #2d8daa;
+    -fx-font-size: 13pt;
+}
+
+.jfx-text-field
+{
+    -jfx-focus-color: #2d8daa;
+    /*-jfx-unfocus-color: #003e50; doesn't work*/
+}
+
+.jfx-password-field
+{
+    -jfx-focus-color: #2d8daa;
+    /*-jfx-unfocus-color: #003e50; doesn't work*/
+}
+
+.text-field
+{
+    -fx-prompt-text-fill: #003e50;
+    -fx-text-fill: #2d8daa;
+}
+
+.text-field .input-line
+{
+    -fx-background-color: #003e50; /*Yellow - bottom bar*/
+}
+
+.date-picker{
+    -fx-background-color:  #003e50;
+}
+
+.date-picker .text-field{
+    -fx-background-color: none;
+    -fx-text-fill: #2d8daa;
+}
+
+.choice-box{
+    -fx-background-color:  #003e50;
+}
+
+.choice-box .label{
+    -fx-text-fill: 	#00141b;
+}
+

@@ -1,0 +1,16 @@
+.jfx-text-field
+{
+    -jfx-focus-color: #2d8daa;
+    /*-jfx-unfocus-color: #003e50; doesn't work*/
+}
+
+.text-field
+{
+    -fx-prompt-text-fill: #003e50;
+    -fx-text-fill: #2d8daa;
+}
+
+.text-field .input-line
+{
+    -fx-background-color: #003e50; /*Yellow - bottom bar*/
+}

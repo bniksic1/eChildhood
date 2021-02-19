@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #00141b;" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="70.0" fitWidth="93.0" layoutX="319.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/eChildhood%203.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="223.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/login%20user%20icon.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="223.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/login%20password%20icon.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imgLoading" fitHeight="25.0" fitWidth="19.0" layoutX="449.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../img/login%20loading.gif" />
+            </image>
+        </ImageView>
+        <Label layoutX="278.0" layoutY="84.0" text="Childhood" textFill="#2d8daa">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="fldUsername" focusColor="#2d8daa" labelFloat="true" layoutX="260.0" layoutY="167.0" maxWidth="218.0" minWidth="218.0" onAction="#onEnter" prefHeight="31.0" prefWidth="218.0" promptText="%enterUsername" styleClass="jfx-fieldDefault" unFocusColor="#003e50" />
+        <JFXPasswordField fx:id="fldPassword" focusColor="#2d8daa" labelFloat="true" layoutX="260.0" layoutY="231.0" maxWidth="218.0" minWidth="218.0" onAction="#onEnter" prefHeight="31.0" prefWidth="218.0" promptText="%enterPassword" unFocusColor="#003e50" />
+        <JFXRadioButton fx:id="radioParent" layoutX="271.0" layoutY="307.0" selected="true" text="%parent" textFill="#2d8daa">
+            <toggleGroup>
+                <ToggleGroup fx:id="login" />
+            </toggleGroup>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="radioEducator" layoutX="358.0" layoutY="307.0" style="-fx-selected-color: white;" text="%educator" textFill="#2d8daa" toggleGroup="$login" />
+        <JFXButton fx:id="btnLogin" layoutX="269.0" layoutY="344.0" onAction="#loginAction" prefHeight="31.0" prefWidth="171.0" styleClass="JButton" text="%login" textFill="#003e50">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="259.0" layoutY="84.0" text="e" textFill="#003e50">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+        <Pane layoutX="15.0" layoutY="30.0" prefHeight="450.0" prefWidth="25.0" style="-fx-background-color: #2d8daa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="0.0" />
+        <Pane layoutX="56.0" prefHeight="450.0" prefWidth="25.0" style="-fx-background-color: #003e50;" />
+        <Label layoutX="221.0" layoutY="274.0" text="%logging" textFill="#003e50">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Line endX="-67.0" layoutX="743.0" layoutY="64.0" startX="-97.0" stroke="#003e50" />
+        <Button layoutX="643.0" layoutY="70.0" mnemonicParsing="false" onAction="#enAction" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: none;">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/united-kingdom.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="643.0" layoutY="99.0" mnemonicParsing="false" onAction="#frAction" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: none;">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/france.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <Button layoutX="643.0" layoutY="127.0" mnemonicParsing="false" onAction="#deAction" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: none;">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/germany.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <Button layoutX="643.0" layoutY="155.0" mnemonicParsing="false" onAction="#bsAction" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: none;">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/bosnia.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <HBox alignment="CENTER" layoutX="195.0" layoutY="389.0" prefHeight="30.0" prefWidth="320.0">
+            <children>
+                <JFXButton alignment="CENTER" contentDisplay="CENTER" onAction="#forgotAction" text="%forgot" textAlignment="CENTER" textFill="#a8dcf3" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></JFXButton>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="453.0" layoutY="21.0" prefHeight="30.0" prefWidth="181.0">
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="%language2" textAlignment="RIGHT" textFill="#003e50">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="232.0" layoutY="122.0" prefHeight="31.0" prefWidth="246.0">
+            <children>
+                <Label fx:id="lblWrong" text="%wrong" textFill="RED" visible="false" />
+            </children>
+        </HBox>
+        <ImageView fx:id="imgFlag" fitHeight="35.0" fitWidth="35.0" layoutX="644.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/united-kingdom.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+    </children>
+</AnchorPane>

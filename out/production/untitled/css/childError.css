@@ -1,0 +1,34 @@
+.jfx-text-field
+{
+    -jfx-focus-color: red;
+    /*-jfx-unfocus-color: #003e50; doesn't work*/
+}
+
+.jfx-password-field
+{
+    -jfx-focus-color: red;
+    /*-jfx-unfocus-color: #003e50; doesn't work*/
+}
+
+.text-field
+{
+    -fx-prompt-text-fill: red;
+    -fx-text-fill: #2d8daa;
+}
+
+.text-field .input-line
+{
+    -fx-background-color: red; /*Yellow - bottom bar*/
+}
+
+.date-picker{
+    -fx-border-color: red;
+    -fx-border-radius: 4;
+    -fx-border-width: 2;
+}
+
+.date-picker .text-field{
+    -fx-background-color: pink;
+    -fx-text-fill: #2d8daa;
+}
+
