@@ -15,6 +15,7 @@
 ## About The Project
 
 ![](pres1.png)
+
 Desktop application intended for kindergarten educators and parents of children.
 
 Users in every moment can see what is daily activity for children, meals for that day etc.
